@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Panda Shop - Quote request</title>
+    <title>Panda Shop - Quote Request</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-   
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
@@ -14,6 +13,21 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Panda Shop offers both wholesale and retail products with items shipped from Vietnam. Providing quality products at competitive prices with exceptional service."
+    />
+
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Panda Shop, wholesale, retail, quality products, shipping from Vietnam, competitive prices, exceptional service"
+    />
+
+    <!-- Meta Author -->
+    <meta name="author" content="Panda Shop" />
 
     <!-- CSS Libraries -->
     <link
@@ -47,27 +61,49 @@
           <div class="col-md-6 justify-content-end">
             <div id="my-search-106399046" class="search"></div>
             <div>
-            <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?106399046&data_platform=code&data_date=2024-08-26" charset="utf-8"></script>
-            <script type="text/javascript"> xSearch("id=my-search-106399046"); </script>
+              <script
+                data-cfasync="false"
+                type="text/javascript"
+                src="https://app.ecwid.com/script.js?106399046&data_platform=code&data_date=2024-08-26"
+                charset="utf-8"
+              ></script>
+              <script type="text/javascript">
+                xSearch("id=my-search-106399046");
+              </script>
             </div>
           </div>
-          <div class="row justify-content-around p-2 col-md-3 align-items-center menu">
-          <div>
-            <div id="my-categories-106399046" >
-                <div>
-                    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?106399046&data_platform=code&data_date=2024-08-26" charset="utf-8"></script>
-                    <script type="text/javascript"> xCategoriesV2("id=my-categories-106399046"); </script>
-                    </div>
-            </div>
-
-          </div>
+          <div
+            class="row justify-content-around p-2 col-md-3 align-items-center menu"
+          >
             <div>
-            <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?106399046&data_platform=code&data_date=2024-08-26" charset="utf-8"></script>
-            <script type="text/javascript">Ecwid.init();</script>
+              <div id="my-categories-106399046">
+                <div>
+                  <script
+                    data-cfasync="false"
+                    type="text/javascript"
+                    src="https://app.ecwid.com/script.js?106399046&data_platform=code&data_date=2024-08-26"
+                    charset="utf-8"
+                  ></script>
+                  <script type="text/javascript">
+                    xCategoriesV2("id=my-categories-106399046");
+                  </script>
+                </div>
+              </div>
+            </div>
+            <div>
+              <script
+                data-cfasync="false"
+                type="text/javascript"
+                src="https://app.ecwid.com/script.js?106399046&data_platform=code&data_date=2024-08-26"
+                charset="utf-8"
+              ></script>
+              <script type="text/javascript">
+                Ecwid.init();
+              </script>
             </div>
             <div class="ec-cart-widget"></div>
+          </div>
         </div>
-      </div>
       </div>
     </div>
     <!-- Bottom Bar End -->
@@ -91,9 +127,18 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="quote-form">
-              <form method="POST" action="#">
+              <p>
+                If you're interested in purchasing our products in bulk, please
+                fill out the form below to request a quote. After submitting
+                your request, our team will review the details and reach out to
+                you promptly to discuss your needs and provide a customized
+                quote. This is the first step in securing quality products at
+                competitive prices, shipped directly from Vietnam. We look
+                forward to assisting you with your wholesale order!
+              </p>
+              <form method="POST" action="mailto:info@pandagh.com">
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-3">
                     <label>Name</label>
                     <input
                       class="form-control"
@@ -103,7 +148,7 @@
                       required
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-3">
                     <label>Email</label>
                     <input
                       class="form-control"
@@ -113,7 +158,7 @@
                       required
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-3">
                     <label>Contact Number</label>
                     <input
                       class="form-control"
@@ -123,7 +168,7 @@
                       required
                     />
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 mb-3">
                     <label>Company Name (Optional)</label>
                     <input
                       class="form-control"
@@ -132,7 +177,26 @@
                       placeholder="Your Company Name"
                     />
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-6 mb-3">
+                    <label>Items and Sample Images</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      name="items"
+                      placeholder="Enter items and attach sample images (if any)"
+                    />
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <label>Upload Sample Images (Optional)</label>
+                    <input
+                      class="form-control-file"
+                      type="file"
+                      name="sample_images"
+                      accept="image/*"
+                      multiple
+                    />
+                  </div>
+                  <div class="col-md-12 mb-3">
                     <label>Details</label>
                     <textarea
                       class="form-control"
@@ -143,7 +207,9 @@
                     ></textarea>
                   </div>
                   <div class="col-md-12">
-                    <button class="btn" type="submit">Submit Request</button>
+                    <button class="btn btn-primary" type="submit">
+                      Submit Request
+                    </button>
                   </div>
                 </div>
               </form>
@@ -155,7 +221,7 @@
     <!-- Quote Request End -->
 
     <!-- Footer Start -->
-    <div class="footer">
+    <div class="footer mt-4">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -163,7 +229,7 @@
               <h2>Get in Touch</h2>
               <div class="contact-info">
                 <p>
-                  <i class="fa fa-map-marker"></i> 
+                  <i class="fa fa-map-marker"></i>
                   Teshie Rasta bush road
                 </p>
                 <p><i class="fa fa-envelope"></i>info@pandagh.com</p>
@@ -180,7 +246,10 @@
                   <a href=""><i class="fab fa-twitter"></i></a>
                   <a href=""><i class="fab fa-facebook-f"></i></a>
                   <a href=""><i class="fab fa-linkedin-in"></i></a>
-                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a
+                    href="https://www.instagram.com/pandaexploregh?igsh=OGprNGRhOHBzMGM1&utm_source=qr"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                   <a href=""><i class="fab fa-youtube"></i></a>
                 </div>
               </div>
@@ -193,7 +262,9 @@
               <ul>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="privacy_policy.html">Privacy Policy</a></li>
-                <li><a href="terms_and _condition.html">Terms & Condition</a></li>
+                <li>
+                  <a href="terms_and_condition.html">Terms & Condition</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -207,9 +278,6 @@
               </ul>
             </div>
           </div>
-        </div>
-
-        
         </div>
       </div>
     </div>
